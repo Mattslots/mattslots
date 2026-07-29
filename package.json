@@ -1,0 +1,1 @@
+{"name":"mattslots-discord-bot-v4-stable","version":"4.0.0","main":"src/index.js","scripts":{"start":"node src/index.js"},"engines":{"node":">=20"},"dependencies":{"discord.js":"^14.21.0","dotenv":"^16.6.1"}}
