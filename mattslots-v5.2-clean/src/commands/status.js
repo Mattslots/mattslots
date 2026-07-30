@@ -1,0 +1,2 @@
+const {SlashCommandBuilder}=require("discord.js");const config=require("../config/server");const {brandEmbed}=require("../utils/embed");
+module.exports={data:new SlashCommandBuilder().setName("status").setDescription("Affiche l’état du bot"),async execute(i){const up=Math.floor(process.uptime());await i.reply({embeds:[brandEmbed("📊 Statut MattSlots",`✅ **En ligne**\n🤖 Version : **${config.version}**\n👥 Membres : **${i.guild.memberCount}**\n⏱️ Uptime : **${Math.floor(up/3600)} h ${Math.floor((up%3600)/60)} min**\n📡 Ping : **${i.client.ws.ping} ms**`)]});}};
