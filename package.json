@@ -4,7 +4,7 @@
   "description": "Bot communautaire MattSlots pour Discord",
   "main": "source/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node source/index.js",
     "check": "node --check src/index.js && node scripts/check-all.js"
   },
   "engines": { "node": ">=20 <27" },
